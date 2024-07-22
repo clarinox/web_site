@@ -1,0 +1,77 @@
+2018-08-09 14:09:54	admin	http://192.168.0.39/pw2/	Added filedata to DB schema for 'images'
+2018-08-09 15:31:17	admin	http://192.168.0.39/pw2/admin/setup/template/removeFields	Deleted field "headline" data in 1 row(s) from 1 page(s) using template "home". [page-by-page]
+2018-08-09 15:31:17	admin	http://192.168.0.39/pw2/admin/setup/template/removeFields	Deleted field "summary" data in 1 row(s) from 1 page(s) using template "home". [page-by-page]
+2018-08-09 17:23:03	admin	http://192.168.0.39/pw2/admin/setup/template/removeFields	Deleted field "body" data in 1 row(s) from 1 page(s) using template "home". [page-by-page]
+2018-08-09 17:23:03	admin	http://192.168.0.39/pw2/admin/setup/template/removeFields	Deleted field "sidebar" data in 1 row(s) from 1 page(s) using template "home". [page-by-page]
+2018-08-09 17:26:33	admin	http://192.168.0.39/pw2/admin/setup/template/removeFields	Deleted field "images" data in 3 row(s) from 1 page(s) using template "home". [page-by-page]
+2018-08-10 14:20:11	admin	http://192.168.0.39/pw2/admin/setup/template/removeFields	Deleted field "featured_products" data in 0 row(s) from 0 page(s) using template "basic-page". [page-by-page]
+2018-08-10 14:30:15	admin	http://192.168.0.39/pw2/admin/setup/template/removeFields	Deleted field "featured_products" data in 0 row(s) from 0 page(s) using template "products". [page-by-page]
+2018-09-14 13:01:48	brooke	http://192.168.0.210/pw2/admin/page/sort/	Updated sort for 2 pages
+2018-10-29 14:26:02	brooke	http://192.168.0.210/pw2/admin/page/sort/	Updated sort for 3 pages
+2018-10-30 19:02:14	brooke	http://192.168.0.210/pw2/admin/page/sort/	Updated sort for 4 pages
+2018-10-30 19:02:22	brooke	http://192.168.0.210/pw2/admin/page/sort/	Updated sort for 3 pages
+2018-10-30 19:02:27	brooke	http://192.168.0.210/pw2/admin/page/sort/	Updated sort for 2 pages
+2018-11-01 11:53:54	admin	http://192.168.0.210/pw2/admin/page/sort/	Updated sort for 1 pages
+2018-11-01 11:54:31	admin	http://192.168.0.210/pw2/admin/page/sort/	Updated sort for 1 pages
+2018-11-01 11:55:17	admin	http://192.168.0.210/pw2/admin/page/sort/	Updated sort for 4 pages
+2018-11-01 11:56:42	admin	http://192.168.0.210/pw2/admin/page/sort/	Updated sort for 8 pages
+2018-11-01 11:57:20	admin	http://192.168.0.210/pw2/admin/page/sort/	Updated sort for 8 pages
+2018-11-01 11:57:39	admin	http://192.168.0.210/pw2/admin/page/sort/	Updated sort for 3 pages
+2018-11-01 12:01:00	admin	http://192.168.0.210/pw2/admin/page/sort/	Updated sort for 2 pages
+2018-11-01 14:29:14	brooke	http://192.168.0.210/pw2/admin/page/sort/	Updated sort for 5 pages
+2018-11-26 13:43:45	brooke	http://192.168.0.210/pw2/admin/page/sort/	Updated sort for 22 pages
+2018-11-26 13:44:51	brooke	http://192.168.0.210/pw2/admin/page/sort/	Updated sort for 8 pages
+2018-11-26 13:45:34	brooke	http://192.168.0.210/pw2/admin/page/sort/	Updated sort for 8 pages
+2019-03-12 17:05:05	brooke	http://192.168.0.210/pw2/admin/setup/template/removeFields	Deleted field "files" data in 0 row(s) from 0 page(s) using template "articles". [page-by-page]
+2019-03-25 12:27:00	brooke	http://192.168.0.210/pw2/admin/page/sort/	Updated sort for 2 pages
+2019-03-25 12:28:33	brooke	http://192.168.0.210/pw2/admin/page/sort/	Updated sort for 1 pages
+2019-03-25 12:29:15	brooke	http://192.168.0.210/pw2/admin/page/sort/	Updated sort for 2 pages
+2019-03-28 12:21:04	admin	http://192.168.0.210/pw2/admin/page/sort/	Updated sort for 2 pages
+2019-03-28 12:21:40	admin	http://192.168.0.210/pw2/admin/page/sort/	Updated sort for 2 pages
+2019-03-28 12:21:59	admin	http://192.168.0.210/pw2/admin/page/sort/	Updated sort for 2 pages
+2019-03-28 12:22:12	admin	http://192.168.0.210/pw2/admin/page/sort/	Updated sort for 2 pages
+2019-04-03 23:44:11	admin	http://192.168.0.210/pw2/admin/page/sort/	Updated sort for 4 pages
+2019-04-11 14:47:16	brooke	http://192.168.0.210/pw2/admin/page/sort/	Updated sort for 2 pages
+2019-04-11 14:47:24	brooke	http://192.168.0.210/pw2/admin/page/sort/	Updated sort for 2 pages
+2019-04-11 14:47:29	brooke	http://192.168.0.210/pw2/admin/page/sort/	Updated sort for 3 pages
+2019-04-30 13:56:05	brooke	http://192.168.0.210/pw2/admin/page/sort/	Updated sort for 11 pages
+2019-04-30 14:37:08	brooke	http://192.168.0.210/pw2/admin/page/sort/	Updated sort for 18 pages
+2019-07-18 18:27:03	admin	http://clarinox.com/admin/page/sort/	Updated sort for 5 pages
+2022-07-18 21:09:31	kannan	https://internal.clarinox.com/pw/admin/setup/field/send-templates-save?id=141	Deleted field "customer_platform" data in 0 row(s) from 0 page(s) using template "home". [page-by-page]
+2023-01-24 18:48:42	kannan	https://internal.clarinox.com/pw/admin/page/sort/	Updated sort for 3 pages
+2023-01-24 18:48:51	kannan	https://internal.clarinox.com/pw/admin/page/sort/	Updated sort for 13 pages
+2023-01-24 18:53:17	kannan	https://internal.clarinox.com/pw/admin/page/sort/	Updated sort for 2 pages
+2023-01-24 20:15:28	kannan	https://internal.clarinox.com/pw/admin/page/sort/	Updated sort for 1 pages
+2023-01-24 22:13:36	kannan	https://internal.clarinox.com/pw/admin/page/sort/	Updated sort for 2 pages
+2023-01-24 22:14:40	kannan	https://internal.clarinox.com/pw/admin/page/sort/	Updated sort for 2 pages
+2023-01-24 22:32:30	kannan	https://internal.clarinox.com/pw/admin/page/sort/	Updated sort for 2 pages
+2023-01-24 22:35:44	kannan	https://internal.clarinox.com/pw/admin/page/sort/	Updated sort for 1 pages
+2023-01-24 22:35:54	kannan	https://internal.clarinox.com/pw/admin/page/sort/	Updated sort for 1 pages
+2023-01-24 22:38:18	kannan	https://internal.clarinox.com/pw/admin/page/sort/	Updated sort for 2 pages
+2023-01-31 20:28:10	kannan	https://internal.clarinox.com/pw/admin/page/sort/	Updated sort for 9 pages
+2023-01-31 20:28:29	kannan	https://internal.clarinox.com/pw/admin/page/sort/	Updated sort for 8 pages
+2023-01-31 20:28:47	kannan	https://internal.clarinox.com/pw/admin/page/sort/	Updated sort for 5 pages
+2023-01-31 20:29:00	kannan	https://internal.clarinox.com/pw/admin/page/sort/	Updated sort for 3 pages
+2023-01-31 20:29:49	kannan	https://internal.clarinox.com/pw/admin/page/sort/	Updated sort for 12 pages
+2023-01-31 20:29:56	kannan	https://internal.clarinox.com/pw/admin/page/sort/	Updated sort for 13 pages
+2023-01-31 20:30:04	kannan	https://internal.clarinox.com/pw/admin/page/sort/	Updated sort for 15 pages
+2023-01-31 20:30:11	kannan	https://internal.clarinox.com/pw/admin/page/sort/	Updated sort for 14 pages
+2023-01-31 23:34:09	kannan	https://internal.clarinox.com/pw/admin/page/sort/	Updated sort for 3 pages
+2023-01-31 23:36:00	kannan	https://internal.clarinox.com/pw/admin/page/sort/	Updated sort for 2 pages
+2023-01-31 23:42:50	kannan	https://internal.clarinox.com/pw/admin/page/sort/	Updated sort for 3 pages
+2023-02-01 00:00:07	kannan	https://internal.clarinox.com/pw/admin/page/sort/	Updated sort for 2 pages
+2023-02-01 17:04:28	kannan	https://internal.clarinox.com/pw/admin/page/sort/	Updated sort for 2 pages
+2023-02-09 22:20:36	kannan	https://internal.clarinox.com/pw/admin/page/sort/	Updated sort for 4 pages
+2024-04-14 17:56:59	kannan	https://develop.clarinox.com/admin/setup/field/send-templates-save?id=147	Deleted field "supportmob" data in 27 row(s) from 1 page(s) using template "home". [page-by-page]
+2024-04-18 19:35:11	kannan	https://develop.clarinox.com/admin/setup/field/send-templates-save?id=144	Deleted field "Client_logos" data in 0 row(s) from 0 page(s) using template "home". [page-by-page]
+2024-04-18 19:53:21	aishwarya	https://develop.clarinox.com/admin/setup/field/send-templates-save?id=154	Deleted field "logopx" data in 25 row(s) from 1 page(s) using template "home". [page-by-page]
+2024-04-24 19:33:44	kannan	https://develop.clarinox.com/admin/setup/field/send-templates-save?id=151	Deleted field "clientsmpx" data in 37 row(s) from 1 page(s) using template "home". [page-by-page]
+2024-05-06 00:23:13	aishwarya	https://develop.clarinox.com/admin/setup/field/send-templates-save?id=143	Deleted field "favicon" data in 0 row(s) from 0 page(s) using template "home". [page-by-page]
+2024-05-06 00:29:27	aishwarya	https://develop.clarinox.com/admin/setup/field/send-templates-save?id=156	Deleted field "logomob" data in 0 row(s) from 0 page(s) using template "home". [page-by-page]
+2024-05-06 00:49:01	aishwarya	https://develop.clarinox.com/admin/setup/field/send-templates-save?id=146	Deleted field "mobile" data in 0 row(s) from 0 page(s) using template "home". [page-by-page]
+2024-05-06 00:54:00	aishwarya	https://develop.clarinox.com/admin/setup/field/send-templates-save?id=155	Deleted field "logospx" data in 0 row(s) from 0 page(s) using template "home". [page-by-page]
+2024-05-06 14:11:32	aishwarya	https://develop.clarinox.com/admin/setup/field/send-templates-save?id=151	Deleted field "clientsmpx" data in 0 row(s) from 0 page(s) using template "newsletter". [page-by-page]
+2024-05-06 14:12:30	aishwarya	https://develop.clarinox.com/admin/setup/field/send-templates-save?id=157	Deleted field "clientmpxs" data in 33 row(s) from 1 page(s) using template "home". [page-by-page]
+2024-05-06 14:15:49	aishwarya	https://develop.clarinox.com/admin/setup/field/send-templates-save?id=158	Deleted field "clientlogopxs" data in 41 row(s) from 1 page(s) using template "home". [page-by-page]
+2024-05-08 14:13:39	aishwarya	https://develop.clarinox.com/admin/page/sort/	Updated sort for 11 pages
+2024-06-13 21:46:26	aishwarya	https://develop.clarinox.com/admin/setup/field/send-templates-save?_admin_setup_field_send-templates-save=&id=76	Deleted field "body" data in 0 row(s) from 0 page(s) using template "partners". [page-by-page]

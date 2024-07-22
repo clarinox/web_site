@@ -1,0 +1,315 @@
+#################################################################################################
+# START PROCESSWIRE HTACCESS DIRECTIVES
+# @version 3.0
+# @indexVersion 300
+#################################################################################################
+
+# -----------------------------------------------------------------------------------------------
+# 1. Don't show directory indexes, but do follow symbolic links 
+# 500 NOTE: Some cloud hosting companies don't allow +FollowSymLinks. 
+# Uncomment +SymLinksifOwnerMatch and comment +FollowSymLinks if you have 500 errors. 
+# If that doesn't resolve the error, then set it back to +FollowSymLinks. 
+# -----------------------------------------------------------------------------------------------
+
+Options -Indexes
+Options +FollowSymLinks
+# Options +SymLinksifOwnerMatch
+
+# -----------------------------------------------------------------------------------------------
+# 2. Let ProcessWire handle 404s
+# -----------------------------------------------------------------------------------------------
+
+ErrorDocument 404 /index.php
+
+# -----------------------------------------------------------------------------------------------
+# 3. Handle request for missing favicon.ico/robots.txt files (no ending quote for Apache 1.3)
+# -----------------------------------------------------------------------------------------------
+
+<Files favicon.ico>
+  ErrorDocument 404 "The requested file favicon.ico was not found.
+</Files>
+
+<Files robots.txt>
+  ErrorDocument 404 "The requested file robots.txt was not found.
+</Files>
+
+# -----------------------------------------------------------------------------------------------
+# 4. Protect from XSS with Apache headers
+# -----------------------------------------------------------------------------------------------
+
+<IfModule mod_headers.c>
+  # prevent site from being loaded in an iframe on another site
+  # you will need to remove this one if you want to allow external iframes
+  Header always append X-Frame-Options SAMEORIGIN 
+
+  # to prevent cross site scripting (IE8+ proprietary)
+  Header set X-XSS-Protection "1; mode=block"
+
+  # prevent mime-based attacks via content sniffing (IE+Chrome)
+  # Header set X-Content-Type-Options "nosniff" 
+</IfModule>
+
+# -----------------------------------------------------------------------------------------------
+# 5. Protect ProcessWire system files 
+# -----------------------------------------------------------------------------------------------
+
+<FilesMatch "\.(inc|info|info\.json|module|sh|sql)$|^\..*$|composer\.(json|lock)$">
+  <IfModule mod_authz_core.c>
+    Require all denied
+  </IfModule>
+  <IfModule !mod_authz_core.c>
+    Order allow,deny
+  </IfModule>
+</FilesMatch>
+
+# -----------------------------------------------------------------------------------------------
+# 6. Override a few PHP settings that can't be changed at runtime (not required)
+# 500 NOTE: Try commenting out this entire section below if getting Apache 500 errors.
+# -----------------------------------------------------------------------------------------------
+
+<IfModule mod_php5.c>
+  php_flag magic_quotes_gpc		off
+  php_flag magic_quotes_sybase		off
+  php_flag register_globals		off
+</IfModule>
+
+# -----------------------------------------------------------------------------------------------
+# 7. Set default directory index files
+# -----------------------------------------------------------------------------------------------
+
+DirectoryIndex index.php index.html index.htm
+
+# -----------------------------------------------------------------------------------------------
+# 8. ProcessWire requires mod_rewrite
+# -----------------------------------------------------------------------------------------------
+
+<IfModule mod_rewrite.c>
+
+  RewriteEngine On
+  AddDefaultCharset UTF-8
+
+  # -----------------------------------------------------------------------------------------------
+  # 8a. Permanent redirection from old Modx links to new Processwire links
+  # The assumption is the PW is installed in the root of public_html (NOT in a sub folder)
+  # -----------------------------------------------------------------------------------------------
+
+  RewriteRule ^about_clarinox/?$ /company/ [R=permanent,L]
+  RewriteRule ^downloads/?$ /resources/ [R=permanent,L]
+  RewriteRule ^whitepapers/?$ /resources/articles/ [R=permanent,L]
+  RewriteRule ^videos/?$ /resources/videos/ [R=permanent,L]
+  RewriteRule ^about_us/?$ /company/overview/ [R=permanent,L]
+  RewriteRule ^case_studies/?$ /resources/case-studies/ [R=permanent,L]
+  RewriteRule ^our_awards/?$ /company/awards/ [R=permanent,L]
+  RewriteRule ^our_clients/?$ /company/ [R=permanent,L]
+  RewriteRule ^our_partners/?$ /company/ [R=permanent,L]
+  RewriteRule ^contact_us/?$ /contact-us/ [R=permanent,L]
+
+  RewriteRule ^submit_inquiry_form/?$ /contact-us/enquiries/ [R=permanent,L]
+  RewriteRule ^newsletter_subscribe/?$ /contact-us/newsletter-subscribe/ [R=permanent,L]
+  RewriteRule ^newsletter_unsubscribe/?$ /contact-us/newsletter-unsubscribe/ [R=permanent,L]
+  RewriteRule ^request_support_form/?$ /contact-us/enquiries/ [R=permanent,L]
+  RewriteRule ^clarinoxblue/?$ /products/clarinoxblue/ [R=permanent,L]
+  RewriteRule ^clarinoxwifi/?$ /products/clarinox-wifi/ [R=permanent,L]
+  RewriteRule ^koalaevm/?$ /products/hardware/koala-evm/ [R=permanent,L]
+  RewriteRule ^koala_evm-specifications/?$ /products/hardware/koala-evm/koala-evm-green/ [R=permanent,L]
+  RewriteRule ^koala_evm-faqs/?$ /products/hardware/koala-evm/faqs/ [R=permanent,L]
+  RewriteRule ^koala_evm-getting_started/?$ /products/hardware/koala-evm/getting-started/ [R=permanent,L]
+
+  RewriteRule ^koala-connect/?$ /products/hardware/koala-connect/ [R=permanent,L]
+  RewriteRule ^joeyduino/?$ /products/hardware/joeyduino/joeydunio-shield/ [R=permanent,L]
+  RewriteRule ^clarinoxsoftframe/?$ /products/softframe/ [R=permanent,L]
+  RewriteRule ^clarinoxsoftframe-supported_hardware/?$ /products/softframe [R=permanent,L]
+  RewriteRule ^clarinoxsoftframe-supported_os_rtos/?$ /products/softframe [R=permanent,L]
+  RewriteRule ^videos-clx_nxp_koala_iot/?$ /resources/videos/clx-nxp-koala-iot/ [R=permanent,L]
+  RewriteRule ^464/?$ /resources/videos/clx-ti-koala/ [R=permanent,L]
+  RewriteRule ^videos-clx_koala_iot/?$ /resources/videos/clx-koala-iot/ [R=permanent,L]
+  RewriteRule ^videos-clx_iot_gateway_stmicro_joeyduino/?$ /resources/videos/clx-iot-gateway-stmicro-joeduino/ [R=permanent,L]
+  RewriteRule ^videos-clx_iot_gateway_renesas_joeyduino/?$ /resources/videos/clx-iot-gateway-renesas-joeyduino/ [R=permanent,L]
+
+  RewriteRule ^videos_clx_tutorials/?$ /resources/videos/tutorials/ [R=permanent,L]
+  #NONE/?$ /resources/videos/clx-wifi-sta-tutorial/ [R=permanent,L]
+  #NONE/?$ /resources/videos/clx-wifi-ap-tutorial/ [R=permanent,L]
+  #NONE/?$ /resources/videos/clxblue-spp-tutorial/ [R=permanent,L]
+  RewriteRule ^videos-clx_renesas_joeyduino/?$ /resources/videos/clxwifi-renesas-joeyduino/ [R=permanent,L]
+  #NONE/?$ /resources/videos/clxblue-renesas-joeyduino/ [R=permanent,L]
+  RewriteRule ^videos-koala_connect/?$ /resources/videos/koala-connect/ [R=permanent,L]
+  RewriteRule ^videos-koala_nxp_joeyduino/?$ /resources/videos/koala-nxp-joeyduino/ [R=permanent,L]
+  RewriteRule ^videos-clx_infineon/?$ /resources/videos/clx-infineon/ [R=permanent,L]
+  RewriteRule ^videos-clxwifi_joeyduino/?$ /resources/videos/clxwifi-joeyduino/ [R=permanent,L]
+  RewriteRule ^videos-clxwifi_murata_marvell/?$ /resources/videos/clxwifi-murata-marvell/ [R=permanent,L]
+  RewriteRule ^videos-clxblue_infineon_xmc4700/?$ /resources/videos/clxblue-infineon-xmc4700/ [R=permanent,L]
+  RewriteRule ^videos-clxblue_renesas_s7g2/?$ /resources/videos/clxblue-renesas-s7g2-cc2564b/ [R=permanent,L]
+  RewriteRule ^videos-clxwifi_nxp_lpc4330/?$ /resources/videos/clxwifi-nxp-lpc4330/ [R=permanent,L]
+  RewriteRule ^videos-clxblue_tiva/?$ /resources/videos/clxblue-tiva/ [R=permanent,L]
+  RewriteRule ^videos-koala_evm_next_gen/?$ /resources/videos/koala-evm-next-gen/ [R=permanent,L]
+  RewriteRule ^videos-bluetooth_a2dp_demo_updated/?$ /resources/videos/bluetooth-a2dp-demo-updated/ [R=permanent,L]
+  RewriteRule ^videos-getting_started_with_jannal/?$ /resources/videos/getting-started-with-jannal/ [R=permanent,L]
+  RewriteRule ^videos-jannal_overview/?$ /resources/videos/jannal-overview/ [R=permanent,L]
+  RewriteRule ^videos-bluetooth_for_medical_application_demo/?$ /resources/videos/bluetooth-for-medical-application-demo/ [R=permanent,L]
+  RewriteRule ^videos-clarinoxwifi_ap_demo/?$ /resources/videos/clarinoxwifi-ap-demo/ [R=permanent,L]
+  RewriteRule ^videos-koala_evm_clarinoxblue_demo/?$ /resources/videos/koala-evm-clarinoxblue-demo/ [R=permanent,L]
+  RewriteRule ^videos-koala_evm_clarinoxwifi_demo/?$ /resources/videos/koala-evm-clarinoxwifi-demo/ [R=permanent,L]
+  RewriteRule ^videos-koala_evm_overview/?$ /resources/videos/koala-evm-overview/ [R=permanent,L]
+  RewriteRule ^videos-bluetooth_connectivity_demo/?$ /resources/videos/bluetooth-connectivity-demo/ [R=permanent,L]
+  RewriteRule ^videos-embedded_wireless_discussion_part_one/?$ /resources/videos/embedded-wireless-discussion-part-one/ [R=permanent,L]
+  RewriteRule ^videos-bluetooth_a2dp_demo/?$ /resources/videos/bluetooth-a2dp-demo/ [R=permanent,L]
+  RewriteRule ^videos-clarinox_waypoint_demonstration/?$ /resources/videos/clarinox-waypoint-demonstration/ [R=permanent,L]
+  RewriteRule ^videos-asset_tracking_for_car_parking_facilities/?$ /resources/videos/asset-tracking-for-car-parking-facilities/ [R=permanent,L]
+  RewriteRule ^videos-rtls_hospital_scenario/?$ /resources/videos/rtls-hospital-scenario/ [R=permanent,L]
+  RewriteRule ^latest_news/?$ /resources/newsletters/ [R=permanent,L]
+  RewriteRule ^news_archive_2017/?$ /resources/newsletters/2017/ [R=permanent,L]
+  RewriteRule ^news_archive_2016/?$ /resources/newsletters/2016/ [R=permanent,L]
+  RewriteRule ^news_archive_2015/?$ /resources/newsletters/2015/ [R=permanent,L]
+  RewriteRule ^news_archive_2014/?$ /resources/newsletters/2014/ [R=permanent,L]
+  RewriteRule ^news_archive_2013/?$ /resources/newsletters/2013/ [R=permanent,L]
+  RewriteRule ^news_archive_2012/?$ /resources/newsletters/2012/ [R=permanent,L]
+  RewriteRule ^news_archive_2011/?$ /resources/newsletters/2011/ [R=permanent,L]
+  RewriteRule ^news_archive_2010/?$ /resources/newsletters/2010/ [R=permanent,L]
+  RewriteRule ^news_archive_2009/?$ /resources/newsletters/2009/ [R=permanent,L]
+  # RewriteRule ^services/?$ NONE
+  # RewriteRule ^mentor_graphics/?$ NONE
+  RewriteRule ^mentor_graphics/?$ /company/partners/mentor-graphics/ [R=permanent,L]
+
+  # -----------------------------------------------------------------------------------------------
+  # 9. If you only want to allow HTTPS, uncomment the RewriteCond and RewriteRule lines below.
+  # -----------------------------------------------------------------------------------------------
+  RewriteCond %{HTTPS} off
+  RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+  
+  # If using an AWS load balancer, use these two lines below instead of those above:
+  # RewriteCond %{HTTP:X-Forwarded-Proto} =http 
+  # RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+  # -----------------------------------------------------------------------------------------------
+  # 10. Set an environment variable so the installer can detect that mod_rewrite is active.
+  # Note that some web hosts don't support this. If you get a 500 error, you might try 
+  # commenting out this SetEnv line below. 
+  # -----------------------------------------------------------------------------------------------
+
+  <IfModule mod_env.c>
+    SetEnv HTTP_MOD_REWRITE On
+  </IfModule>
+
+  # -----------------------------------------------------------------------------------------------
+  # 11. OPTIONAL: Set a rewrite base if rewrites aren't working properly on your server.
+  # And if your site directory starts with a "~" you will most likely have to use this.
+  # -----------------------------------------------------------------------------------------------
+
+  # RewriteBase /
+  # RewriteBase /pw/
+  # RewriteBase /~user/
+
+  # -----------------------------------------------------------------------------------------------
+  # 12. Access Restrictions: Keep web users out of dirs that begin with a period,
+  # but let services like Lets Encrypt use the webroot authentication method.
+  # -----------------------------------------------------------------------------------------------
+
+  RewriteRule "(^|/)\.(?!well-known)" - [F]
+
+  # -----------------------------------------------------------------------------------------------
+  # 13. OPTIONAL: Redirect users to the 'www.' version of the site (uncomment to enable).
+  # For example: http://processwire.com/ would be redirected to http://www.processwire.com/
+  # -----------------------------------------------------------------------------------------------
+
+  # RewriteCond %{HTTP_HOST} !^www\. [NC]
+  # RewriteRule ^ http://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+  # ----------------------------------------------------------------------------------------------- 
+  # 14. OPTIONAL: Send URLs with non-ASCII name-format characters to 404 page (optimization)
+  # ----------------------------------------------------------------------------------------------- 
+
+  # RewriteCond %{REQUEST_URI} "[^-_.a-zA-Z0-9/~]"
+  # RewriteCond %{REQUEST_FILENAME} !-f
+  # RewriteCond %{REQUEST_FILENAME} !-d
+  # RewriteRule ^(.*)$ index.php?it=/http404/ [L,QSA]
+
+  # -----------------------------------------------------------------------------------------------
+  # 15. Access Restrictions: Protect ProcessWire system files
+  # -----------------------------------------------------------------------------------------------
+
+  # Allow screenshot files (for install.php only: this 1 line below may be removed after install)
+  RewriteCond %{REQUEST_URI} !(^|/)site-[^/]+/install/[^/]+\.(jpg|jpeg|png|gif)$
+  # Block access to any htaccess files
+  RewriteCond %{REQUEST_URI} (^|/)\.htaccess$ [NC,OR]
+  # Block access to protected assets directories
+  RewriteCond %{REQUEST_URI} (^|/)(site|site-[^/]+)/assets/(cache|logs|backups|sessions|config|install|tmp)($|/.*$) [OR]
+  # Block acceess to the /site/install/ directory
+  RewriteCond %{REQUEST_URI} (^|/)(site|site-[^/]+)/install($|/.*$) [OR]
+  # Block dirs in /site/assets/ dirs that start with a hyphen
+  RewriteCond %{REQUEST_URI} (^|/)(site|site-[^/]+)/assets.*/-.+/.* [OR]
+  # Block access to /wire/config.php, /site/config.php, /site/config-dev.php, and /wire/index.config.php
+  RewriteCond %{REQUEST_URI} (^|/)(wire|site|site-[^/]+)/(config|index\.config|config-dev)\.php$ [OR]
+  # Block access to any PHP-based files in /templates-admin/
+  RewriteCond %{REQUEST_URI} (^|/)(wire|site|site-[^/]+)/templates-admin($|/|/.*\.(php|html?|tpl|inc))$ [OR]
+  # Block access to any PHP or markup files in /site/templates/
+  RewriteCond %{REQUEST_URI} (^|/)(site|site-[^/]+)/templates($|/|/.*\.(php|html?|tpl|inc))$ [OR]
+  # Block access to any PHP files in /site/assets/
+  RewriteCond %{REQUEST_URI} (^|/)(site|site-[^/]+)/assets($|/|/.*\.php)$ [OR]
+  # Block access to any PHP files in core or core module directories
+  RewriteCond %{REQUEST_URI} (^|/)wire/(core|modules)/.*\.(php|inc|tpl|module|info\.json)$ [OR]
+  # Block access to any PHP files in /site/modules/
+  RewriteCond %{REQUEST_URI} (^|/)(site|site-[^/]+)/modules/.*\.(php|inc|tpl|module|info\.json)$ [OR]
+  # Block access to any software identifying txt files
+  RewriteCond %{REQUEST_URI} (^|/)(COPYRIGHT|INSTALL|README|htaccess)\.(txt|md|textile)$ [OR]
+  # Block all http access to the default/uninstalled site-default directory
+  RewriteCond %{REQUEST_URI} (^|/)site-default/
+  # If any conditions above match, issue a 403 forbidden
+  RewriteRule ^.*$ - [F,L]
+
+  # PW-PAGENAME
+  # ----------------------------------------------------------------------------------------------- 
+  # 16a. Ensure that the URL follows the name-format specification required by PW
+  # See also directive 16b below, you should choose and use either 16a or 16b. 
+  # ----------------------------------------------------------------------------------------------- 
+
+  RewriteCond %{REQUEST_URI} "^/~?[-_.a-zA-Z0-9/]*$"
+  
+  # ----------------------------------------------------------------------------------------------- 
+  # 16b. Alternative name-format specification for UTF8 page name support.
+  # If used, comment out section 16a above and uncomment the directive below. If you have updated 
+  # your $config->pageNameWhitelist make the characters below consistent with that. 
+  # ----------------------------------------------------------------------------------------------- 
+  
+  # RewriteCond %{REQUEST_URI} "^/~?[-_./a-zA-Z0-9æåäßöüđжхцчшщюяàáâèéëêěìíïîõòóôøùúûůñçčćďĺľńňŕřšťýžабвгдеёзийклмнопрстуфыэęąśłżź]*$"
+  
+  # END-PW-PAGENAME
+  # -----------------------------------------------------------------------------------------------
+  # 17. If the request is for a file or directory that physically exists on the server,
+  # then don't give control to ProcessWire, and instead load the file
+  # ----------------------------------------------------------------------------------------------- 
+
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !(favicon\.ico|robots\.txt)
+
+  # -----------------------------------------------------------------------------------------------
+  # 18. OPTIONAL: Prevent ProcessWire from attempting to serve images or anything in /site/assets/. 
+  # Both of these lines are optional, but can help to reduce server load. However, they
+  # are not compatible with the $config->pagefileSecure option (if enabled) and they 
+  # may produce an Apache 404 rather than your regular 404. You may uncomment the two lines
+  # below if you don't need to use the $config->pagefileSecure option. After uncommenting, test
+  # a URL like domain.com/site/assets/files/test.jpg to make sure you are getting a 404 and not
+  # your homepage. If getting your homepage, then either: do not use this option, or comment out 
+  # section #2 above that makes ProcessWire the 404 handler. 
+  # ----------------------------------------------------------------------------------------------- 
+
+  # RewriteCond %{REQUEST_FILENAME} !\.(jpg|jpeg|gif|png|ico)$ [NC]
+  # RewriteCond %{REQUEST_FILENAME} !(^|/)site/assets/
+
+  # ----------------------------------------------------------------------------------------------- 
+  # 19. Pass control to ProcessWire if all the above directives allow us to this point.
+  # For regular VirtualHosts (most installs)
+  # ----------------------------------------------------------------------------------------------- 
+  RewriteRule ^(.*)$ index.php?it=$1 [L,QSA]
+
+  # ----------------------------------------------------------------------------------------------- 
+  # 20. If using VirtualDocumentRoot (500 NOTE): comment out the one above and use this one instead
+  # ----------------------------------------------------------------------------------------------- 
+  # RewriteRule ^(.*)$ /index.php?it=$1 [L,QSA]
+
+</IfModule>
+
+#################################################################################################
+# END PROCESSWIRE HTACCESS DIRECTIVES
+#################################################################################################
+

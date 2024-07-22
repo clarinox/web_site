@@ -1,0 +1,1 @@
+2018-11-02 14:23:31	guest	http://192.168.0.210/pw2/products/hardware/	SQLSTATE[42000]: Syntax error or access violation: 1066 Not unique table/alias: 'rootparent'

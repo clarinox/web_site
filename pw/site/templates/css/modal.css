@@ -1,0 +1,82 @@
+
+html body{
+    font-size:13px;
+    line-height:24px;
+    font-weight:normal;
+   font-family: 'Poppins', sans-serif !important;
+    color: #000;
+}
+
+/* modal image ID */
+.mdlImg:hover{opacity: 0.7;}
+
+.mdlImg {
+  border-radius: 4px;
+  cursor: zoom-in;
+  transition: 0.2s;
+}
+
+/* Modal background */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.9);
+}
+
+/* Modal image - no caption */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 90%;
+  max-height: 85%;
+}
+
+/* Add Animation */
+.modal-content {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* Modal close button */
+.close_button {
+  position: absolute;
+  top: 100px;
+  right: 10px;
+  color: #ffff;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+.close_button:hover{
+  color: #d2d2d2;
+}

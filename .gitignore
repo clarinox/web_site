@@ -1,1 +1,4 @@
+*.sql
+_zip
+_old
 .svn

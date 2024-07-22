@@ -1,0 +1,1 @@
+2018-08-23 14:30:06	[SUCCESS] Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36, 10.0.3.2, sony.nugrahanto@clarinox.com

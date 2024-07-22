@@ -1,0 +1,35 @@
+.center {
+  padding: 70px 0;
+}
+
+
+.featured-partner {
+	background: #005599 !important;
+	color:#ffffff !important;
+
+}
+
+.featured-partner .theme_color{
+        background: #005599 !important;
+        color:#ffffff !important;
+}
+
+.featured-partner .nopadding{
+	padding-right: 10px !important;
+}
+
+.featured-partner a:hover{
+    color: #ffffff; // white
+}
+
+.featured-partner a:link{
+	color: #cdcfca;
+}
+
+.featured-partner a:visited{
+    color: #cdcfca;
+}
+
+.cust-border{
+    border-top: 3px solid #ddd
+}
