@@ -1463,4 +1463,84 @@ top:35px !important;
 
 }
 
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .text-cell {
+        width: auto;
+        padding: 20px 25px;
+        font-size: 11px;
+        line-height: 2;
+    }
+
+
+    .logo-cell {
+        width: auto;
+        padding: 24px;
+    }
+
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+
+    .logo-cell {
+        padding: 14px;
+    }
+
+    .text-cell {
+        padding: 10px 60px;
+    }
+    .logo-cell img {
+         max-width: 60%;
+    }
+
+}
+
+@media (min-width: 230px) and (max-width: 425px) {
+
+    .logo-cell {
+        padding: 12px;
+    }
+
+    .text-cell {
+       padding: 8px 8px;
+        font-size: 10px;
+        line-height: 1.5em;
+    }
+
+    .logo-cell img {
+         max-width: 100%;
+    }
+   .read-more {
+    right: 15px;
+    bottom: 3px;
+   }
+
+}
+
+
+@media (min-width: 230px) and (max-width: 425px) {
+
+   .office-info {
+       font-size: 10px;
+       line-height: 1.5em;
+   }
+
+}
+
+@media (min-width: 230px) and (max-width: 768px) {
+	
+    .activecontainer {
+        display: none;
+    }
+}
+
+@media (min-width: 769px) {
+	
+    .activecontainer2 {
+        display: none;
+    }
+}
+
+
+
 

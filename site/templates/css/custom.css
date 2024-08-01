@@ -1703,3 +1703,39 @@ a.btn {
     padding: 11px 14px;
 }
 
+.logo-cell {
+  background-color: #e0e0e0;
+  width: auto;
+  padding: 50px;
+}
+
+.text-cell {
+  background-color: #f2f2f2;
+  width: auto;
+  padding: 20px 50px;
+}
+
+.spacer-cell {
+  width: 8px;
+}
+
+.spacer-row {
+  height: 8px;
+}
+
+.logo-cell img {
+  max-width: 100%;
+  height: auto;
+}    
+
+.text-cell {
+  position: relative;
+}
+
+.read-more {
+  position: absolute;
+  right: 50px;
+  bottom: 8px;
+}  
+
+
