@@ -103,7 +103,7 @@
             <img src="<?php echo $slider->url ?>" alt="Bootstrap Touch Slider" class="slide-image banner" style="margin-top: 70px;" />
 
             <!-- Enquiry Button -->
-            <a href="https://develop.clarinox.com/contact-us/enquiries/">
+            <a href="https://clarinox.com/contact-us/enquiries/">
                 <img src="/site/assets/files/1368/Enquiry_Button.png" class="small-image slide-image positioned-image enquiry-button" />
             </a>
 
@@ -119,7 +119,7 @@
 
         <img src="/site/templates/images/Banner/Clarinox_Homepage_2024.jpg" class="img-responsive banner-mar max-bar" />
 
-        <a href="https://develop.clarinox.com/contact-us/enquiries/">
+        <a href="https://clarinox.com/contact-us/enquiries/">
             <img src="/site/assets/files/1368/Enquiry_Button.png" class="small-image slide-image positioned-image enquiry-mob" />
         </a>
 
@@ -363,7 +363,7 @@
 
 <div class="carousel-inner" role="listbox">
     <img src="/site/templates/images/Banner/Clarinox_Homepage.jpg" class="img-responsive banner-mar" />
-    <a href="https://develop.clarinox.com/contact-us/enquiries/">
+    <a href="https://clarinox.com/contact-us/enquiries/">
         <img src="/site/assets/files/1368/Enquiry_Button.png" class="small-image slide-image positioned-image enquiry-mob" />
     </a>
     <img src="/site/assets/files/1368/W-E-S_Spinner.png" class="small-image slide-image positioned-image spinner-mob" />
