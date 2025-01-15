@@ -645,7 +645,9 @@ if ($companyPage && $companyPage->hasField('mobclient')) {
                 <p class="left-texts foot-font">&copy; 2001-2025 CLARINOX TECHNOLOGIES PTY LTD., ALL RIGHTS RESERVED.</p>
             </div>
             <div class="col-md-6 col-sm-3 col-xs-4">
-                <p class="right-texts foot-font">ISO9001 APPROVED COMPANY</p>
+               <p class="right-texts foot-font">
+                  <a href="/company/quality/" style="color: white;">ISO9001 CERTIFIED COMPANY</a>
+               </p>
             </div> 
         </div>
     </div> 
