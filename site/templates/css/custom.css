@@ -1705,22 +1705,22 @@ a.btn {
 
 .logo-cell {
   background-color: #e0e0e0;
-  width: auto;
+  width: 20%;
   padding: 50px;
 }
 
 .text-cell {
   background-color: #f2f2f2;
-  width: auto;
-  padding: 20px 50px;
+  padding: 20px 25px;
+  text-align: left; 
 }
 
 .spacer-cell {
-  width: 8px;
+  width: 16px;
 }
 
 .spacer-row {
-  height: 8px;
+  height: 16px;
 }
 
 .logo-cell img {
@@ -1735,7 +1735,7 @@ a.btn {
 .read-more {
   position: absolute;
   right: 50px;
-  bottom: 8px;
+  bottom: 11px;
 }  
 
 
