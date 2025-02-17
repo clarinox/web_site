@@ -324,11 +324,11 @@
                 <div class="col-xs-4">
                     <div class="office-info">
                         <p><strong>Clarinox India Office</strong></p> 
-                        <p>#103, AB Block,Second Avenue,<br>Anna Nagar,Chennai-600 040,<br>Tamil Nadu, India</p>
+                        <p>#58A, Thirumangalam road,<br>Villivakkam,Chennai-600 049,<br>Tamil Nadu, India</p>
                     </div>
                 </div>
                 <div class="col-xs-4">
-                    <div class="office-info">
+                    <div class="office-info" style="margin-left: -18px;">
                         <p><strong>Clarinox T&uuml;rkiye Office</strong></p> 
                         <p>Zafer SB Mah. Nil&uuml;fer SK.<br/>No: 32 Office: 207<br/>Gaziemir, Izmir, 35410<br/>T&uuml;rkiye</p> 
                     </div>
@@ -610,7 +610,8 @@ if ($companyPage && $companyPage->hasField('mobclient')) {
                 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 addrs ">
                     <div class="office-info">
                         <p><strong>Clarinox India Office</strong></p>
-                        <p>#103, AB Block,<br>Second Avenue,<br>Anna Nagar,<br>Chennai-600 040,<br>Tamil Nadu, India</p>
+                        <p>#58A, Thirumangalam road,<br>Villivakkam,Chennai-600 049,<br>Tamil Nadu, India</p>
+
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 addrs ">
