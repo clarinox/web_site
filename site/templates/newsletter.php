@@ -198,7 +198,7 @@ foreach ($newsletters as $newsletter) {
 ?>
 
 <div class="container white_space">
-    <div class="col-md-12 col-sm-12 col-xs-12 nopadding">
+    <div class="col-md-8 col-sm-12 col-xs-12 nopadding right-content">
         <div class="col-md-12 col-lg-12 col-sm-12 page_cont col-xs-12 nopadding">
             <h3 class="page_heading theme_color"><?php echo $newsletter->headline ?></h3>
         </div>
