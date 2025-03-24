@@ -259,18 +259,11 @@
             <div class="col-md-4 col-sm-3 col-xs-12 mob_pad_none">
                 <div class="product_conts_bx containers-fluids products_det_gray" style="height: 320px;">
                     <h4 class="page_heading text-center">NEWS</h4>
-                    <div class="icon_sec">
-                        <p class="product_det"><strong>Celebrate our 22nd year of operations and the opening of our new office in Turkiye</strong></p>
-                        <div class="row">
-                            <div class="col-xs-6">
-                                <img src="/site/assets/files/1366/clx_sm.jpg" alt="Image 1" style="width: 100%; height: auto;">
-                            </div>
-                            <div class="col-xs-6">
-                                <img src="/site/assets/files/1366/clx_sm_2023.jpg" alt="Image 2" style="width: 100%; height: auto;">
-                            </div>
-                        </div>
-                        <p class="pros_read"><a href="/resources/newsletters/">More <i class="fa fa-angle-double-right"></i></a></p>
-                    </div>
+                    <img src="/site/assets/files/1053/clarinox_insight_sip_partnership.jpg" class="mars">
+                    <div class="clearfix">&nbsp;</div>
+                    <p style="text-align: center;"><strong>Clarinox and Insight SIP Announce Partnership </strong></p>
+                    <p class="pros_read"><a href="/resources/newsletters/">More <i class="fa fa-angle-double-right"></i></a></p>
+                    <div class="clearfix">&nbsp;</div>
                 </div>
             </div>
 
@@ -291,7 +284,7 @@
                     <h4 class="page_heading text-center">CASE STUDIES</h4>
                     <img src="/site/assets/files/1369/actronicaclarinox-1.jpg" class="mars">
                     <div class="clearfix">&nbsp;</div>
-                    <p>Wireless Haptic Vest Creates Immersive Experiences for Virtual Reality...</p>
+                    <p style="margin-left: 11%;"><strong> Wireless Haptic Vest Creates Immersive Experiences for Virtual Reality... </strong></p>
                     <p class="pros_read"><a href="/resources/case-studies/">More <i class="fa fa-angle-double-right"></i></a></p>
                     <div class="clearfix">&nbsp;</div>
                 </div>
@@ -539,23 +532,17 @@ if ($companyPage && $companyPage->hasField('mobclient')) {
     <div class="clearfix">&nbsp;</div>
     <div class="container">
         <div class="col-md-12 col-sm-12 col-xs-12 nopadding product_list">
-
+ 
             <div class="col-md-12 col-sm-12 col-xs-12 nopadding product_list">
-                <div class="product_conts_bx containers-in products_det_gray" style="height: 400px;">
-                    <h4 class="page_heading text-center uppercase" style="font-size: 20px;">NEWS</h4>
-                    <div class="clearfix">&nbsp;</div>
-                    <div class="icon_sec">
-                        <p class="product_det"><strong>Celebrate our 22nd year of operations and the opening of our new office in Turkiye</strong></p>
-                        <div class="row">
-                            <div class="col-xs-6">
-                                <img src="/site/assets/files/1366/clx_sm.jpg" alt="Image 1" style="width: 100%; height: auto;">
-                            </div>
-                            <div class="col-xs-6">
-                                <img src="/site/assets/files/1366/clx_sm_2023.jpg" alt="Image 2" style="width: 100%; height: auto;">
-                            </div>
-                        </div>
-                        <p class="pro"><a href="/resources/newsletters/">More <i class="fa fa-angle-double-right"></i></a></p>
+                <div class="product_conts_bx con containers-fluids products_det_gray" style="height:auto;">
+                    <h4 class="page_heading text-center" style="font-size: 20px;">NEWS</h4>
+                    <img src="/site/assets/files/1053/clarinox_insight_sip_partnership.jpg" class="mars">
+                     <div class="clearfix">&nbsp;</div>
+                     <div class="img-pad">
+                          <p><strong>Clarinox and Insight SIP Announce Partnership </strong></p>
                     </div>
+                    <p class="pro"><a href="/resources/newsletters/">More <i class="fa fa-angle-double-right"></i></a></p>
+                    <div class="clearfix">&nbsp;</div>
                 </div>
             </div>
 
@@ -577,7 +564,7 @@ if ($companyPage && $companyPage->hasField('mobclient')) {
                     <img src="/site/assets/files/1369/actronicaclarinox-1.jpg" class="mars">
                      <div class="clearfix">&nbsp;</div>
                      <div class="img-pad">
-                          <p>Wireless Haptic Vest Creates Immersive Experiences for Virtual Reality</p>
+                          <p><strong>Wireless Haptic Vest Creates Immersive Experiences for Virtual Reality</strong></p>
                     </div>
                     <p class="pro"><a href="/resources/case-studies/">More <i class="fa fa-angle-double-right"></i></a></p>
                     <div class="clearfix">&nbsp;</div>

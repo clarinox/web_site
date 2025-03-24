@@ -216,7 +216,7 @@ foreach ($newsletters as $newsletter) {
 
 
 <div class="container">
-    <div class="col-md-12 col-sm-12 col-xs-12 nopadding">
+    <div class="col-md-12 col-sm-12 col-xs-12 nopadding white_space">
         <div class="col-md-12 col-lg-12 col-sm-12 page_cont col-xs-12 nopadding">
             <h3 class="page_heading theme_color"><?php echo $page->title ?></h3> 
         </div>

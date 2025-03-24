@@ -1541,6 +1541,10 @@ top:35px !important;
     }
 }
 
+@media (min-width: 1024px) {
+    .right-content {
+        margin-left: 13%;    }
 
+}
 
 

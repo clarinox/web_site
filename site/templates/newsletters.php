@@ -198,24 +198,27 @@ foreach ($newsletters as $newsletter) {
     $even = false;
     if ($i % 2 == 0) {$even = true;}
     $i++;
-    if ($even) {echo "<div class='container-fluid product_det_gray'>";}
+    if ($even) {echo "<div class=''>";}
 ?>
 
-<div class="container white_spacing">
+<?php if ($even) {echo "</div>";}?>
+<?php } ?>
+
+<div class="container ">
     <div class="col-md-12 col-sm-12 col-xs-12 nopadding" id="<?php echo $newsletter->name; ?>">
         <div class="col-md-12 col-lg-12 col-sm-12 page_cont col-xs-12 nopadding">
-            <h3 class="page_heading theme_color"><?php echo $newsletter->title ?></h3>
+            <h3 class="page_heading theme_color"><?php echo $newsletters->title ?></h3>
         </div>
         <div class="col-md-12 col-lg-12 col-sm-12 page_cont col-xs-12 nopadding">
-            <p><?php echo $newsletter->body ?></p>
+            <p><?php echo $newsletters->body ?></p>
         </div>
     </div>
-</div>                       
+</div>  
 
-<?php if ($even) {echo "</div>";}?>
-<div class="learfix">&nbsp;</div>
-<?php } ?>
-          
+
+     <p><?php echo $page->body ?></p>
+
+
 <div class="container">
     <div class="col-md-12 col-lg-12 col-sm-12 page_cont col-xs-12 nopadding">
         <h3 class="page_heading  text-center   ">Past News</h3>
