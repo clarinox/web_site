@@ -1547,4 +1547,10 @@ top:35px !important;
 
 }
 
+@media (min-width: 1720px) {
+    .address {
+         margin-left: 30px;
+   }
+
+}
 

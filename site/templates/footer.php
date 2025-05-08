@@ -19,12 +19,12 @@
     <div class="col-md-4 col-sm-4 col-xs-6 adds-ind  page_footer"> 
         <div class="office-info">
             <p><strong>Clarinox India Office</strong></p> 
-            <p>#103, AB Block, Second Avenue,<br>Anna Nagar,<br>Chennai-600 040,<br>Tamil Nadu, India</p>
+            <p>#58A, Thirumangalam road, Villivakkam, Chennai-600 049,<br>Tamil Nadu, India</p>
         </div>
     </div>
 
     <div class="col-md-4 col-sm-4 col-xs-6 adds-tur page_footer"> 
-        <div class="office-info">
+        <div class="office-info address" >
                 <p><strong>Clarinox T&uuml;rkiye Office</strong></p> 
                 <p>Zafer SB Mah. Nil&uuml;fer SK.<br/>No: 32 Office: 207<br/>Gaziemir, Izmir, 35410<br/>T&uuml;rkiye</p>  
         </div>
