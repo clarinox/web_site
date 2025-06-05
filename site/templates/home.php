@@ -306,7 +306,7 @@
             <div class="clearfix">&nbsp;</div>
         </div>
         <div class="col-md-6 col-sm-6 col-xs-12 social_right-top col-sm-4 col-xs-12">
-            <div class="row">
+            <div class="row" style="margin-right: -50px;">
                 <div class="col-xs-3">
                     <div class="office-info">
                         <p><strong>Clarinox Head Office</strong></p> 
@@ -317,7 +317,7 @@
                 <div class="col-xs-4">
                     <div class="office-info">
                         <p><strong>Clarinox India Office</strong></p> 
-                        <p>#58A, Thirumangalam road,<br>Villivakkam,Chennai-600 049,<br>Tamil Nadu, India</p>
+                        <p>105, Anna Salai, Little Mount,<br>Guindy, Chennai-600 032,<br>Tamil Nadu, India</p>
                     </div>
                 </div>
                 <div class="col-xs-4">
@@ -586,7 +586,7 @@ if ($companyPage && $companyPage->hasField('mobclient')) {
         </div>
         <div class="clearfix">&nbsp;</div>
         <div class="container">
-            <div class="row">
+            <div class="row" style="margin-right: -50px;">
                 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 addrs ">
                     <div class="office-info">
                         <p><strong>Clarinox Head Office</strong></p>
@@ -597,7 +597,7 @@ if ($companyPage && $companyPage->hasField('mobclient')) {
                 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 addrs ">
                     <div class="office-info">
                         <p><strong>Clarinox India Office</strong></p>
-                        <p>#58A, Thirumangalam road,<br>Villivakkam,Chennai-600 049,<br>Tamil Nadu, India</p>
+                        <p>105, Anna Salai, Little Mount,<br>Guindy, Chennai-600 032,<br>Tamil Nadu, India</p>
 
                     </div>
                 </div>

@@ -19,7 +19,7 @@
     <div class="col-md-4 col-sm-4 col-xs-6 adds-ind  page_footer"> 
         <div class="office-info">
             <p><strong>Clarinox India Office</strong></p> 
-            <p>#58A, Thirumangalam road, Villivakkam, Chennai-600 049,<br>Tamil Nadu, India</p>
+            <p>105, Anna Salai, Little Mount, Guindy, Chennai-600 032,<br>Tamil Nadu, India</p>
         </div>
     </div>
 
