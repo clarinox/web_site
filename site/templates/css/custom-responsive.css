@@ -522,17 +522,11 @@ top:35px !important;
 }
 
 
-@media (min-width: 1916px) {
+@media (min-width: 100px) {
     .mediumactive {
         display: none;
     }
 
-}
-
-@media (min-width: 1721px) and (max-width: 1915px) {
-    .maxactive {
-        display: none;
-    }
 }
 
 @media (min-width: 1916px) {
@@ -549,18 +543,13 @@ top:35px !important;
     }
 }
 
-@media (min-width: 100px) and (max-width: 1720px) {
+@media (min-width: 100px) and (max-width: 1024px) {
     .iteamactive {
         display: none;
     }
     .mediumactive {
         display: none;
     }
-
-    .maxactive {
-        display: none;
-    }
-
     .footeractive {
         display: none;
     }
@@ -577,7 +566,14 @@ top:35px !important;
 
 }
 
-@media (min-width: 1721px) {
+@media (min-width: 100px) and (max-width: 1024px) {
+
+    .maxactive {
+        display: none;
+    }
+}
+
+@media (min-width: 1025px) {
     .mobileactive {
         display: none;
     }
@@ -1199,12 +1195,24 @@ top:35px !important;
    }
 }
 
-@media (min-width: 1025px) and (max-width: 1720px) {
+@media (min-width: 1025px) and (max-width: 1915px) {
     .banner-mar {
         margin-top: 90px;
     }
    .positioned-image {
-       top: 54% !important;
+       top: 60% !important;
+    }
+
+.spinner-mob {
+    left: 44.3% !important;
+    transform: translate(-50%, -50%) !important;
+    max-width: 17.4% !important;
+    }
+
+.enquiry-mob {
+    right: 17% !important;
+    transform: translateY(-50%) !important;
+    max-width: 12.2% !important;
     }
 }
 
@@ -1553,4 +1561,129 @@ top:35px !important;
    }
 
 }
+
+@media (min-width: 1200px) and (max-width: 1720px) {
+    .containers-fluids {
+         height: 273px;
+         font-size: 13px;
+         line-height: 1.5;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1199px) {
+    .containers-fluids {
+         height: 280px;
+         font-size: 12px;
+         line-height: 1.5;
+    }
+}
+
+@media (min-width: 1728px) {
+    .clxlogo {
+         height: 100px;
+         width: 180px;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1727px) {
+    .clxlogo {
+         width: 160px;
+    }
+
+    .mars {
+        width: 80%;
+   }
+
+    .news-font {
+        font-size: 12px !important;
+   }
+
+
+}
+
+@media (min-width: 1110px) and (max-width: 1720px) {
+
+    .mgaddr {
+            margin-right: -95px!important;
+   }
+    .Vid {
+            width: 260px;
+            Height: 160px;
+
+   }
+
+
+}
+
+@media (min-width: 1025px) and (max-width: 1199px) {
+
+    .Vid {
+            width: 196px;
+            Height: 160px;
+
+   }
+
+
+}
+
+@media (min-width: 1721px) {
+
+    .mgaddr {
+            margin-right: -50px!important;
+   }
+    .Vid {
+            width: 320px;
+            Height: 181px;
+
+   }
+
+
+}
+
+@media (min-width: 1721px) {
+
+    .lapactive {
+        display: none;
+    }
+
+
+}
+
+@media (max-width: 1024px)  {
+
+    .lapactive {
+        display: none;
+    }
+
+
+}
+
+@media (min-width: 1025px) and (max-width: 1720px) {
+
+    .mactive {
+        display: none;
+    }
+
+
+.clogos {
+
+margin: -35px;
+        height: 49px;
+margin-left: -119px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 

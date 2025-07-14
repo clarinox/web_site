@@ -226,3 +226,45 @@
     opacity: .75;
     color: black;
 }
+
+@media (min-width: 1025px) and (max-width: 1720px) {
+
+    .slick-prev
+      {
+          position: absolute;
+    top: 43%;
+    transform: translateY(-50%);
+    left: 48; 
+    z-index: 1;
+    margin-left: 0px;
+ }
+
+[dir='rtl'] .slick-prev
+{
+    right: -25px;
+    left: auto;
+}
+
+.slick-next
+{
+    right: 5px;
+    position: absolute;
+    top: 43%;
+    transform: translateY(-50%);
+    margin-right: 14px;
+
+}
+
+[dir='rtl'] .slick-next
+{
+    right: auto;
+    left: -25px;
+}
+
+.products_cont_bx {
+    padding-left: 30px;
+}
+
+
+}
+

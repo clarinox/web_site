@@ -131,8 +131,7 @@
 
 <div class="iteamactive">
 
-      <div class="clearfix">&nbsp;</div>
-      <div class="clearfix">&nbsp;</div>                                                         
+      <div class="clearfix">&nbsp;</div>                                                        
 
 <!-- PRODUCTS & SOLUTIONS -->
 <div class="container">
@@ -147,7 +146,7 @@
         <div class="col-md-3 col-sm-3 col-xs-12 mob_pad_none">
             <div class="product_conts_bx containers-fluids product_det_gray grey">
                 <div class="icon_sec">
-                    <img src="/site/assets/files/1023/clarinoxblue.png" class="img-responsive" height="100" width="180">
+                    <img src="/site/assets/files/1023/clarinoxblue.png" class="img-responsive clxlogo">
                 </div>
                 <div class="clearfix">&nbsp;</div>
                 <p class="product_det">A robust Bluetooth Classic/LE protocol stack, Auracast and Mesh ready, supporting over 15 different RTOS. ClarinoxBlue is a dev-friendly stack that offers advanced embedded connectivity solutions.</p>
@@ -158,7 +157,7 @@
         <div class="col-md-3 col-sm-3 col-xs-12 mob_pad_none">
             <div class="product_conts_bx containers-fluids product_det_gray grey">
                 <div class="icon_sec">
-                    <img src="/site/assets/files/1024/clarinoxwifi.png" class="img-responsive" height="100" width="180">
+                    <img src="/site/assets/files/1024/clarinoxwifi.png" class="img-responsive clxlogo">
                 </div>
                 <div class="clearfix">&nbsp;</div>
                 <p class="product_det">A proven Wi-Fi protocol stack with AP, STA P2P, WPS, Mesh, ported to over 15 different RTOS. Clarinox Wi-Fi empowers developers to create reliable and high-performance embedded Wi-Fi connections.</p>
@@ -169,7 +168,7 @@
         <div class="col-md-3 col-sm-3 col-xs-12 mob_pad_none">
             <div class="product_conts_bx containers-fluids product_det_gray grey">
                 <div class="icon_sec">
-                    <img src="/site/assets/files/1026/clarifi.png" class="img-responsive" height="100" width="180">
+                    <img src="/site/assets/files/1026/clarifi.png" class="img-responsive clxlogo">
                 </div>
                 <div class="clearfix">&nbsp;</div>
                 <p class="product_det">ClariFi&trade;  an all-in-one high-level debugger with integrated Bluetooth and Wi-Fi sniffers, protocol analysis, memory optimization, leak analysis, and detailed thread/task insights.</p>
@@ -180,7 +179,7 @@
         <div class="col-md-3 col-sm-3 col-xs-12 mob_pad_none">
             <div class="product_conts_bx containers-fluids product_det_gray grey">
                 <div class="icon_sec">
-                    <img src="/site/assets/files/1219/softframe-1.png" class="img-responsive" height="100" width="180">
+                    <img src="/site/assets/files/1219/softframe-1.png" class="img-responsive clxlogo">
                 </div>
                 <div class="clearfix">&nbsp;</div>
                 <p class="product_det">Our versatile protocol stacks operate seamlessly on the Clarinox SoftFrame abstraction layer, facilitating swift portability, co-existence, and interoperability.</p>
@@ -192,7 +191,9 @@
 
 <div class="clearfix">&nbsp;</div>
 
+
 <!-- Supported and clients -->
+<div class="mactive">
 <div class="container">
     <div class="row">
         <div class="col-md-6 nopadding">
@@ -249,6 +250,50 @@
         </div>
     </div>
 </div>
+</div>
+
+<div class="lapactive">
+<div class="container">  
+    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 nopadding"> 
+        <h4 class="page_heading text-center uppercase" style="font-size: 28px;">SUPPORTED PLATFORMS</h4>
+    </div> 
+    <div class="clearfix">&nbsp;</div>
+    <div class="col-md-12 col-sm-12 col-xs-12 nopadding">
+        <div class="slider responsive hg">
+            <?php
+            $supportsmob = $page->supportsmob; 
+            foreach ($supportsmob as $image) {
+                echo "<div><img src='{$image->url}' class='logos'/></div>";
+            }
+            ?>
+        </div>
+        <div class="clearfix">&nbsp;</div>
+        <div class="clearfix">&nbsp;</div>
+        <div class="clearfix">&nbsp;</div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="clearfix">&nbsp;</div>    
+    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 nopadding"> 
+        <h4 class="page_heading text-center uppercase topx" style="font-size: 28px;">CLIENTS</h4>
+    </div> 
+    <div class="clearfix">&nbsp;</div>
+    <div class="col-md-12 col-sm-12 col-xs-12 nopadding">
+        <div class="slider responsive hg">
+            <?php
+            $clientmob = $page->clientmob; 
+            foreach ($clientmob as $image) {
+                echo "<div><img src='{$image->url}' class='logos'/></div>";
+            }
+            ?>
+        </div>
+        <div class="clearfix">&nbsp;</div>
+        <div class="clearfix">&nbsp;</div>
+        <div class="clearfix">&nbsp;</div>
+    </div>
+</div>
+</div>
 
 <!-- News and videos -->
 <div class="container-fluid address_back">
@@ -261,7 +306,7 @@
                     <h4 class="page_heading text-center">NEWS</h4>
                     <img src="/site/assets/files/1053/clarinox_insight_sip_partnership.jpg" class="mars">
                     <div class="clearfix">&nbsp;</div>
-                    <p style="text-align: center;"><strong>Clarinox and Insight SIP Announce Partnership </strong></p>
+                    <p class="news-font" style="text-align: center;"><strong>Clarinox and Insight SIP Announce Partnership </strong></p>
                     <p class="pros_read"><a href="/resources/newsletters/">More <i class="fa fa-angle-double-right"></i></a></p>
                     <div class="clearfix">&nbsp;</div>
                 </div>
@@ -272,7 +317,7 @@
                     <h4 class="page_heading text-center">VIDEOS</h4>
                     <div class="icon_sec">
                         <div class="" style="margin-left: 15px;">
-                            <iframe id="player" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" title="Bluetooth Low Energy Audio (aka Auracast) streaming by Clarinox" width="320px" height="181" src="https://www.youtube.com/embed/sOcIpDbZHhg?start=76"></iframe>
+                            <iframe id="player" class="Vid" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" title="Bluetooth Low Energy Audio (aka Auracast) streaming by Clarinox" src="https://www.youtube.com/embed/sOcIpDbZHhg?start=76"></iframe>
                         </div>
                         <p class="pros_read"><a href="/resources/videos/">More <i class="fa fa-angle-double-right"></i></a></p>
                     </div>
@@ -284,7 +329,7 @@
                     <h4 class="page_heading text-center">CASE STUDIES</h4>
                     <img src="/site/assets/files/1369/actronicaclarinox-1.jpg" class="mars">
                     <div class="clearfix">&nbsp;</div>
-                    <p style="margin-left: 11%;"><strong> Wireless Haptic Vest Creates Immersive Experiences for Virtual Reality... </strong></p>
+                    <p class="news-font" style="margin-left: 11%;"><strong> Wireless Haptic Vest Creates Immersive Experiences for Virtual Reality... </strong></p>
                     <p class="pros_read"><a href="/resources/case-studies/">More <i class="fa fa-angle-double-right"></i></a></p>
                     <div class="clearfix">&nbsp;</div>
                 </div>
@@ -306,7 +351,7 @@
             <div class="clearfix">&nbsp;</div>
         </div>
         <div class="col-md-6 col-sm-6 col-xs-12 social_right-top col-sm-4 col-xs-12">
-            <div class="row" style="margin-right: -50px;">
+            <div class="row mgaddr">
                 <div class="col-xs-3">
                     <div class="office-info">
                         <p><strong>Clarinox Head Office</strong></p> 
@@ -535,7 +580,7 @@ if ($companyPage && $companyPage->hasField('mobclient')) {
  
             <div class="col-md-12 col-sm-12 col-xs-12 nopadding product_list">
                 <div class="product_conts_bx con containers-fluids products_det_gray" style="height:auto;">
-                    <h4 class="page_heading text-center" style="font-size: 20px;">NEWS</h4>
+                    <h4 class="page_heading text-center" style="font-size: 20px;">CASE STUDIES</h4>
                     <img src="/site/assets/files/1053/clarinox_insight_sip_partnership.jpg" class="mars">
                      <div class="clearfix">&nbsp;</div>
                      <div class="img-pad">
@@ -545,6 +590,7 @@ if ($companyPage && $companyPage->hasField('mobclient')) {
                     <div class="clearfix">&nbsp;</div>
                 </div>
             </div>
+
 
             <div class="col-md-12 col-sm-12 col-xs-12 nopadding product_list">
                 <div class="product_conts_bx con containers-fluids products_det_gray" style="height: 400px;">
@@ -586,7 +632,7 @@ if ($companyPage && $companyPage->hasField('mobclient')) {
         </div>
         <div class="clearfix">&nbsp;</div>
         <div class="container">
-            <div class="row" style="margin-right: -50px;">
+            <div class="row" style="margin-right: -25px;">
                 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 addrs ">
                     <div class="office-info">
                         <p><strong>Clarinox Head Office</strong></p>
@@ -633,9 +679,9 @@ if ($companyPage && $companyPage->hasField('mobclient')) {
                 <p class="left-texts foot-font">&copy; 2001-2025 CLARINOX TECHNOLOGIES PTY LTD., ALL RIGHTS RESERVED.</p>
             </div>
             <div class="col-md-6 col-sm-3 col-xs-4">
-               <p class="right-texts foot-font">
-                  <a href="/company/quality/" style="color: white;">ISO9001 CERTIFIED COMPANY</a>
-               </p>
+            <p class="right-texts foot-font">
+             <a href="/company/quality/" style="color: white;">ISO9001 CERTIFIED COMPANY</a>
+            </p>
             </div> 
         </div>
     </div> 
