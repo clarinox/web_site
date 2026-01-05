@@ -676,7 +676,7 @@ if ($companyPage && $companyPage->hasField('mobclient')) {
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-sm-9 col-xs-8">
-                <p class="left-texts foot-font">&copy; 2001-2025 CLARINOX TECHNOLOGIES PTY LTD., ALL RIGHTS RESERVED.</p>
+                <p class="left-texts foot-font">&copy; 2001-2026 CLARINOX TECHNOLOGIES PTY LTD., ALL RIGHTS RESERVED.</p>
             </div>
             <div class="col-md-6 col-sm-3 col-xs-4">
             <p class="right-texts foot-font">
