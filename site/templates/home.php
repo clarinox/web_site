@@ -19,6 +19,7 @@
 <meta name="description" content="Clarinox provides innovative Bluetooth and Wi-Fi protocol stack software for embedded wireless systems">
 <meta name="keywords" content="<?php echo $page->meta_keywords ?>">
 <meta name="author" content="">
+<meta name="google-site-verification" content="S3K6MbR6dam711NqsnkhmzhcfcruUI3JB3b7tSU9VlA">
 
 <!--FAVICON-->
 <link rel="apple-touch-icon" sizes="180x180" href="/site/templates/images/favicon/apple-touch-icon.png">
