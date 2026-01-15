@@ -10,6 +10,7 @@
 <meta name="description" content="<?php echo $page->meta_description ?>">
 <meta name="keywords" content="<?php echo $page->meta_keywords ?>">
 <meta name="author" content="">
+<meta name="google-site-verification" content="S3K6MbR6dam711NqsnkhmzhcfcruUI3JB3b7tSU9VlA">
 
 
 <?php if($page === $pages->get(1)) { ?>
