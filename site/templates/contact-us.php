@@ -77,7 +77,7 @@
                     <div class="form_content">
                         <div class="col-md-12 col-sm-12 col-xs-12  nopadding">
                             <p class="form_title">Got any questions, general or products related? if so, then complete the form below or email
-                             <a href="mailto: clx-enquiry@clarinox.com"target="_blank"> </br> clx-enquiry@clarinox.com</a></p>
+                             <a href="mailto: clx-enquiries@clarinox.com"target="_blank"> </br> clx-enquiries@clarinox.com</a></p>
                         </div>
                         <div class="clearfix">&nbsp;</div>
                         <div class="col-md-12 col-sm-12 col-xs-12  nopadding">
